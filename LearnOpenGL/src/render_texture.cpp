@@ -68,7 +68,7 @@ void RenderTexture::initTexture()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 	int width, height;
-	unsigned char* image = SOIL_load_image("E:\\Study\\OpenGL\\LearnOpenGL\\LearnOpenGL\\resource\\crate.jpg", &width, &height, 0, SOIL_LOAD_RGB);
+	unsigned char* image = SOIL_load_image("../resource/crate.jpg", &width, &height, 0, SOIL_LOAD_RGB);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
 	glGenerateMipmap(GL_TEXTURE_2D); 
 	SOIL_free_image_data(image);
@@ -82,7 +82,7 @@ void RenderTexture::initTexture()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
 
-	image = SOIL_load_image("E:\\Study\\OpenGL\\LearnOpenGL\\LearnOpenGL\\resource\\child.jpg", &width, &height, 0, SOIL_LOAD_RGB);
+	image = SOIL_load_image("../resource/child.jpg", &width, &height, 0, SOIL_LOAD_RGB);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
 	glGenerateMipmap(GL_TEXTURE_2D);
 

@@ -26,7 +26,7 @@ void CoorDinateSys::initTexture()
 	
 	int width = 0;
 	int height = 0;
-	unsigned char* image = SOIL_load_image("E:\\Study\\OpenGL\\LearnOpenGL\\LearnOpenGL\\resource\\child.jpg", &width, &height, 0, SOIL_LOAD_RGB);
+	unsigned char* image = SOIL_load_image("../resource/child.jpg", &width, &height, 0, SOIL_LOAD_RGB);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
 	glBindTexture(GL_TEXTURE_2D, 0);
 	SOIL_free_image_data(image);
@@ -37,7 +37,7 @@ void CoorDinateSys::initTexture()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
-	image = SOIL_load_image("E:\\Study\\OpenGL\\LearnOpenGL\\LearnOpenGL\\resource\\crate.jpg", &width, &height, 0, SOIL_LOAD_RGB);
+	image = SOIL_load_image("../resource/crate.jpg", &width, &height, 0, SOIL_LOAD_RGB);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
 	SOIL_free_image_data(image);
 

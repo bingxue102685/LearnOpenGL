@@ -1,6 +1,6 @@
 #include "CameraStudy.h"
 
-vec3 CameraStudy::cameraPos = vec3(0.0f, 0.0f, -1.0f);
+vec3 CameraStudy::cameraPos = vec3(0.0f, 0.0f, -3.0f);
 vec3 CameraStudy::cameraFront = vec3(0.0f, 0.0f, 3.0f);
 vec3 CameraStudy::cameraUp = vec3(0.0f, 1.0f, 0.0f);
 bool CameraStudy::keys[1024];
@@ -112,7 +112,7 @@ void CameraStudy::InitTexture()
 
 	int width;
 	int height;
-	unsigned char* image = SOIL_load_image("E:\\Study\\OpenGL\\LearnOpenGL\\LearnOpenGL\\resource\\crate.jpg", &width, & height, 0, SOIL_LOAD_RGB);
+	unsigned char* image = SOIL_load_image("../resource/crate.jpg", &width, & height, 0, SOIL_LOAD_RGB);
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, image);
 	glBindTexture(GL_TEXTURE_2D, 0);
 	SOIL_free_image_data(image);
