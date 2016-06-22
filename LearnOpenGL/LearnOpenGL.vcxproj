@@ -111,6 +111,10 @@
     <None Include="..\resource\shaders\coordinate.vs" />
     <None Include="..\resource\shaders\light.frag" />
     <None Include="..\resource\shaders\light.vs" />
+    <None Include="..\resource\shaders\materialcube.frag" />
+    <None Include="..\resource\shaders\materialcube.vs" />
+    <None Include="..\resource\shaders\materiallight.frag" />
+    <None Include="..\resource\shaders\materiallight.vs" />
     <None Include="..\resource\shaders\shaderstudy.frag" />
     <None Include="..\resource\shaders\shaderstudy.vs" />
     <None Include="..\resource\shaders\textures.frag" />

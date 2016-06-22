@@ -14,11 +14,12 @@
 #include "CameraStudy.h"
 #include "ColorStudy.h"
 #include "BasicLighting.h"
+#include "MaterialStudy.h"
 int main() 
 {
 	RenderDelegate* renderDelegate = RenderDelegate::getInstance();
 
-	renderDelegate->setHandleDelegate(new BasicLighting());
+	renderDelegate->setHandleDelegate(new MaterialStudy());
 
 	renderDelegate->run();
 
