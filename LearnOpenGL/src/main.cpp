@@ -12,11 +12,12 @@
 #include "transform.h"
 #include "coordinateSys.h"
 #include "CameraStudy.h"
+#include "ColorStudy.h"
 int main() 
 {
 	RenderDelegate* renderDelegate = RenderDelegate::getInstance();
 
-	renderDelegate->setHandleDelegate(new CameraStudy());
+	renderDelegate->setHandleDelegate(new ColorStudy());
 
 	renderDelegate->run();
 

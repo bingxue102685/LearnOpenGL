@@ -71,6 +71,7 @@
   <ItemGroup>
     <ClCompile Include="src\Camera.cpp" />
     <ClCompile Include="src\CameraStudy.cpp" />
+    <ClCompile Include="src\ColorStudy.cpp" />
     <ClCompile Include="src\coordinateSys.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\renderDelegate.cpp" />
@@ -83,6 +84,7 @@
   <ItemGroup>
     <ClInclude Include="src\Camera.h" />
     <ClInclude Include="src\CameraStudy.h" />
+    <ClInclude Include="src\ColorStudy.h" />
     <ClInclude Include="src\coordinateSys.h" />
     <ClInclude Include="src\handle.h" />
     <ClInclude Include="src\renderDelegate.h" />
@@ -95,8 +97,12 @@
   <ItemGroup>
     <None Include="..\resource\shaders\camera.frag" />
     <None Include="..\resource\shaders\camera.vs" />
+    <None Include="..\resource\shaders\colorstudy.frag" />
+    <None Include="..\resource\shaders\colorstudy.vs" />
     <None Include="..\resource\shaders\coordinate.frag" />
     <None Include="..\resource\shaders\coordinate.vs" />
+    <None Include="..\resource\shaders\light.frag" />
+    <None Include="..\resource\shaders\light.vs" />
     <None Include="..\resource\shaders\shaderstudy.frag" />
     <None Include="..\resource\shaders\shaderstudy.vs" />
     <None Include="..\resource\shaders\textures.frag" />

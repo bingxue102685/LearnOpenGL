@@ -5,29 +5,8 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="源文件\learn">
-      <UniqueIdentifier>{cd4eea5a-1fe5-4f2e-82ea-09cce4043920}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\learn\hello_triangle">
-      <UniqueIdentifier>{59661cef-2763-4a02-bd67-3e5a43a70c3a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\learn\shader">
-      <UniqueIdentifier>{11622072-19dd-497e-873f-45cc6f0803e8}</UniqueIdentifier>
-    </Filter>
     <Filter Include="resource">
       <UniqueIdentifier>{fbf74e69-d680-40f3-925b-fc77dc2d1403}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\learn\texture">
-      <UniqueIdentifier>{74e1e4fd-f652-4de8-8bf9-771ab742bdb9}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\learn\transform">
-      <UniqueIdentifier>{d97e2ac8-681b-4de1-9882-76f2df485767}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\learn\coordinate">
-      <UniqueIdentifier>{2dcb081e-0995-40a8-a49d-b95e9190c5bb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="源文件\learn\camera">
-      <UniqueIdentifier>{ed655ac8-ef3f-4641-b2ed-961fb5968385}</UniqueIdentifier>
     </Filter>
     <Filter Include="resource\shaders">
       <UniqueIdentifier>{61387131-e85c-4a58-9f79-4ed008af5102}</UniqueIdentifier>
@@ -35,69 +14,102 @@
     <Filter Include="resource\pic">
       <UniqueIdentifier>{f74fc3cd-8d95-47d5-9da0-70071d15a8c0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\GettingStarted">
+      <UniqueIdentifier>{cd4eea5a-1fe5-4f2e-82ea-09cce4043920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GettingStarted\hello_triangle">
+      <UniqueIdentifier>{59661cef-2763-4a02-bd67-3e5a43a70c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GettingStarted\shader">
+      <UniqueIdentifier>{11622072-19dd-497e-873f-45cc6f0803e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GettingStarted\texture">
+      <UniqueIdentifier>{74e1e4fd-f652-4de8-8bf9-771ab742bdb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GettingStarted\transform">
+      <UniqueIdentifier>{d97e2ac8-681b-4de1-9882-76f2df485767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GettingStarted\coordinate">
+      <UniqueIdentifier>{2dcb081e-0995-40a8-a49d-b95e9190c5bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\GettingStarted\camera">
+      <UniqueIdentifier>{ed655ac8-ef3f-4641-b2ed-961fb5968385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Lighting">
+      <UniqueIdentifier>{8e44988e-08c4-4f6c-a198-bd02c350cfdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Lighting\color">
+      <UniqueIdentifier>{cf46dd4f-1bc9-4adc-b71d-519af3a1af8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\simpleShader.cpp">
-      <Filter>源文件\learn\hello_triangle</Filter>
-    </ClCompile>
-    <ClCompile Include="src\renderDelegate.cpp">
-      <Filter>源文件\learn</Filter>
+      <Filter>源文件\GettingStarted\hello_triangle</Filter>
     </ClCompile>
     <ClCompile Include="src\shaderStudy.cpp">
-      <Filter>源文件\learn\shader</Filter>
+      <Filter>源文件\GettingStarted\shader</Filter>
     </ClCompile>
     <ClCompile Include="src\render_texture.cpp">
-      <Filter>源文件\learn\texture</Filter>
+      <Filter>源文件\GettingStarted\texture</Filter>
     </ClCompile>
     <ClCompile Include="src\shaderHandle.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="src\transform.cpp">
-      <Filter>源文件\learn\transform</Filter>
+      <Filter>源文件\GettingStarted\transform</Filter>
     </ClCompile>
     <ClCompile Include="src\coordinateSys.cpp">
-      <Filter>源文件\learn\coordinate</Filter>
+      <Filter>源文件\GettingStarted\coordinate</Filter>
     </ClCompile>
     <ClCompile Include="src\CameraStudy.cpp">
-      <Filter>源文件\learn\camera</Filter>
+      <Filter>源文件\GettingStarted\camera</Filter>
     </ClCompile>
     <ClCompile Include="src\Camera.cpp">
-      <Filter>源文件\learn\camera</Filter>
+      <Filter>源文件\GettingStarted\camera</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderDelegate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ColorStudy.cpp">
+      <Filter>源文件\Lighting\color</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\simpleShader.h">
-      <Filter>源文件\learn\hello_triangle</Filter>
-    </ClInclude>
-    <ClInclude Include="src\handle.h">
-      <Filter>源文件\learn</Filter>
-    </ClInclude>
-    <ClInclude Include="src\renderDelegate.h">
-      <Filter>源文件\learn</Filter>
+      <Filter>源文件\GettingStarted\hello_triangle</Filter>
     </ClInclude>
     <ClInclude Include="src\shaderStudy.h">
-      <Filter>源文件\learn\shader</Filter>
+      <Filter>源文件\GettingStarted\shader</Filter>
     </ClInclude>
     <ClInclude Include="src\render_texture.h">
-      <Filter>源文件\learn\texture</Filter>
+      <Filter>源文件\GettingStarted\texture</Filter>
     </ClInclude>
     <ClInclude Include="src\shaderHandle.h">
       <Filter>源文件</Filter>
     </ClInclude>
     <ClInclude Include="src\transform.h">
-      <Filter>源文件\learn\transform</Filter>
+      <Filter>源文件\GettingStarted\transform</Filter>
     </ClInclude>
     <ClInclude Include="src\coordinateSys.h">
-      <Filter>源文件\learn\coordinate</Filter>
+      <Filter>源文件\GettingStarted\coordinate</Filter>
     </ClInclude>
     <ClInclude Include="src\CameraStudy.h">
-      <Filter>源文件\learn\camera</Filter>
+      <Filter>源文件\GettingStarted\camera</Filter>
     </ClInclude>
     <ClInclude Include="src\Camera.h">
-      <Filter>源文件\learn\camera</Filter>
+      <Filter>源文件\GettingStarted\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\handle.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderDelegate.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ColorStudy.h">
+      <Filter>源文件\Lighting\color</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -129,6 +141,18 @@
       <Filter>resource\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\transform.vs">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\colorstudy.frag">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\colorstudy.vs">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\light.frag">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\light.vs">
       <Filter>resource\shaders</Filter>
     </None>
   </ItemGroup>
