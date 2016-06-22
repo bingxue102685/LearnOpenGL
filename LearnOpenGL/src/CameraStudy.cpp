@@ -1,17 +1,5 @@
 #include "CameraStudy.h"
 
-vec3 CameraStudy::cameraPos = vec3(0.0f, 0.0f, -3.0f);
-vec3 CameraStudy::cameraFront = vec3(0.0f, 0.0f, 3.0f);
-vec3 CameraStudy::cameraUp = vec3(0.0f, 1.0f, 0.0f);
-bool CameraStudy::keys[1024];
-GLfloat CameraStudy::lastX = 400;
-GLfloat CameraStudy::lastY = 300;
-GLfloat CameraStudy::pitchValue = 0;
-GLfloat CameraStudy::yawValue = 0;
-GLboolean CameraStudy::firstMouse = GL_TRUE;
-GLboolean CameraStudy::firstScroll = GL_TRUE;
-GLfloat CameraStudy::aspect = 45.0f;
-
 CameraStudy::CameraStudy()
 {
 	this->initParameters();
@@ -21,22 +9,22 @@ CameraStudy::CameraStudy()
 
 void CameraStudy::initParameters()
 {
-	this->deltaTime = 0;
-	this->lastTime = 0;
+	this->shader = new ShaderHandle("camera");
+	this->camera = new Camera();
 }
 
 void CameraStudy::initStatues()
 {
 	glEnable(GL_DEPTH_TEST);
-	this->shader = new ShaderHandle("camera");
+	
 	this->InitVAO();
 	this->InitTexture();
 	
 	GLFWwindow* window = RenderDelegate::getInstance()->getWindowHandle();
-	glfwSetKeyCallback(window, &CameraStudy::key_callback);
-	glfwSetCursorPosCallback(window, &CameraStudy::mouse_callback);
+	glfwSetKeyCallback(window, &Camera::key_callback);
+	glfwSetCursorPosCallback(window, &Camera::mouse_callback);
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-	glfwSetScrollCallback(window, &CameraStudy::scroll_callback);
+	glfwSetScrollCallback(window, &Camera::scroll_callback);
 }
 
 void CameraStudy::InitVAO()
@@ -134,109 +122,15 @@ void CameraStudy::InitTexture()
 	SOIL_free_image_data(image);
 }
 
-void CameraStudy::key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)
-{
-	if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) 
-	{
-		glfwSetWindowShouldClose(window, GL_TRUE);
-		return;
-	}
-	
-	if(action == GLFW_PRESS)
-		CameraStudy::keys[key] = true;
-	else if(action == GLFW_RELEASE)
-		CameraStudy::keys[key] = false;	
-}
-
-void CameraStudy::mouse_callback(GLFWwindow* window, double xpos, double ypos)
-{
-	if (CameraStudy::firstMouse)
-	{
-		CameraStudy::lastX = xpos;
-		CameraStudy::lastY = ypos;
-		CameraStudy::firstMouse = GL_FALSE;
-	}
-
-	//1.计算出鼠标和上一帧的偏移量
-	GLfloat xOffset = xpos - CameraStudy::lastX;
-	GLfloat yOffset = ypos - CameraStudy::lastY;
-	CameraStudy::lastX = xpos;
-	CameraStudy::lastY = ypos;
-	GLfloat sensitivity = 0.05f;
-	xOffset *= sensitivity;
-	yOffset *= sensitivity;
-	//2.把偏移量添加到摄像机的俯仰角和偏航角
-	CameraStudy::yawValue += xOffset;
-	CameraStudy::pitchValue += yOffset;
-	//3.对俯仰角进行最大最小限制
-	if (CameraStudy::pitchValue > 89.0) {
-		CameraStudy::pitchValue = 89.0;
-	}
-
-	if (CameraStudy::pitchValue < -89.0) {
-		CameraStudy::pitchValue = -89.0;
-	}
-	//4.计算方向向量
-	vec3 frontTemp;
-	frontTemp.x = cos(radians(CameraStudy::pitchValue)) * cos(radians(CameraStudy::yawValue));
-	frontTemp.y = sin(radians(CameraStudy::pitchValue));
-	frontTemp.z = cos(radians(CameraStudy::pitchValue)) * sin(radians(CameraStudy::yawValue));
-	CameraStudy::cameraFront = normalize(frontTemp);
-}
-
-void CameraStudy::scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
-{
-	if (CameraStudy::aspect >= 1.0f && CameraStudy::aspect <= 55.0f)
-	{
-		CameraStudy::aspect -= yoffset;
-	}
-
-	if (CameraStudy::aspect < 1.0f)
-	{
-		CameraStudy::aspect = 1.0f;
-	}
-
-	if (CameraStudy::aspect > 55.0f)
-	{
-		CameraStudy::aspect = 55.0f;
-	}
-}
-
-void CameraStudy::DoMovement()
-{
-	GLfloat cameraSpeed = 0.1f * this->deltaTime;
-	if (CameraStudy::keys[GLFW_KEY_W])
-	{
-		CameraStudy::cameraPos += (CameraStudy::cameraFront * cameraSpeed);
-	}
-	
-	if (CameraStudy::keys[GLFW_KEY_S])
-	{
-		CameraStudy::cameraPos -= (CameraStudy::cameraFront * cameraSpeed);
-	}
-
-	if (CameraStudy::keys[GLFW_KEY_A])
-	{
-		CameraStudy::cameraPos -= (normalize(cross(CameraStudy::cameraFront, CameraStudy::cameraUp)) * cameraSpeed);
-	}
-
-	if (CameraStudy::keys[GLFW_KEY_D])
-	{
-		CameraStudy::cameraPos += (normalize(cross(CameraStudy::cameraFront, CameraStudy::cameraUp)) * cameraSpeed);
-	}
-	
-}
-
 void CameraStudy::render()
 {
-	GLfloat currentFrame = glfwGetTime();
-	this->deltaTime = currentFrame - this->lastTime;
-	this->lastTime = currentFrame;
-
-	this->DoMovement();
 
 	glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+	//移动camera
+	this->camera->setDeltaTime(glfwGetTime());
+	this->camera->DoMovement();
 
 	shader->UseProgram();
 	
@@ -258,11 +152,10 @@ void CameraStudy::render()
 		GLfloat radius = 10.0f;
 		GLfloat camX = sin(glfwGetTime()) * radius;
 		GLfloat camZ = cos(glfwGetTime()) * radius;
-		//                  摄像机的位置，          摄像机指向的位置  ，     摄像机上方向
-		//view = lookAt(vec3(camX, 0.0f, camZ), vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 1.0f, 0.0f)); 
-		view = lookAt(CameraStudy::cameraPos, CameraStudy::cameraPos + CameraStudy::cameraFront, CameraStudy::cameraUp);
 
-		projection = perspective(radians(CameraStudy::aspect), 800.0f / 600.0f, 0.1f, 100.0f);
+		view = this->camera->GetLookAt();
+
+		projection = perspective(radians(Camera::aspect), 800.0f / 600.0f, 0.1f, 100.0f);
 
 		glUniformMatrix4fv(glGetUniformLocation(shader->getProgram(), "model"), 1, GL_FALSE, value_ptr(model));
 		glUniformMatrix4fv(glGetUniformLocation(shader->getProgram(), "view"), 1, GL_FALSE, value_ptr(view));

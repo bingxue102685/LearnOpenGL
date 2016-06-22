@@ -64,6 +64,9 @@
     <ClCompile Include="src\CameraStudy.cpp">
       <Filter>源文件\learn\camera</Filter>
     </ClCompile>
+    <ClCompile Include="src\Camera.cpp">
+      <Filter>源文件\learn\camera</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\simpleShader.h">
@@ -91,6 +94,9 @@
       <Filter>源文件\learn\coordinate</Filter>
     </ClInclude>
     <ClInclude Include="src\CameraStudy.h">
+      <Filter>源文件\learn\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Camera.h">
       <Filter>源文件\learn\camera</Filter>
     </ClInclude>
   </ItemGroup>
