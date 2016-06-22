@@ -41,6 +41,9 @@
     <Filter Include="源文件\Lighting\color">
       <UniqueIdentifier>{cf46dd4f-1bc9-4adc-b71d-519af3a1af8c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Lighting\basiclighting">
+      <UniqueIdentifier>{3d0db650-f3b5-4b7d-a714-3d4e27f53c03}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -76,6 +79,9 @@
     <ClCompile Include="src\ColorStudy.cpp">
       <Filter>源文件\Lighting\color</Filter>
     </ClCompile>
+    <ClCompile Include="src\BasicLighting.cpp">
+      <Filter>源文件\Lighting\basiclighting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\simpleShader.h">
@@ -110,6 +116,9 @@
     </ClInclude>
     <ClInclude Include="src\ColorStudy.h">
       <Filter>源文件\Lighting\color</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BasicLighting.h">
+      <Filter>源文件\Lighting\basiclighting</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +162,18 @@
       <Filter>resource\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\light.vs">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\basiclight.frag">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\basiclight.vs">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\basiclighting.frag">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\basiclighting.vs">
       <Filter>resource\shaders</Filter>
     </None>
   </ItemGroup>

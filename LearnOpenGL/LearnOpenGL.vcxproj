@@ -69,11 +69,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\BasicLighting.cpp" />
     <ClCompile Include="src\Camera.cpp" />
     <ClCompile Include="src\CameraStudy.cpp" />
     <ClCompile Include="src\ColorStudy.cpp" />
     <ClCompile Include="src\coordinateSys.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MaterialStudy.cpp" />
     <ClCompile Include="src\renderDelegate.cpp" />
     <ClCompile Include="src\render_texture.cpp" />
     <ClCompile Include="src\shaderHandle.cpp" />
@@ -82,11 +84,13 @@
     <ClCompile Include="src\transform.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\BasicLighting.h" />
     <ClInclude Include="src\Camera.h" />
     <ClInclude Include="src\CameraStudy.h" />
     <ClInclude Include="src\ColorStudy.h" />
     <ClInclude Include="src\coordinateSys.h" />
     <ClInclude Include="src\handle.h" />
+    <ClInclude Include="src\MaterialStudy.h" />
     <ClInclude Include="src\renderDelegate.h" />
     <ClInclude Include="src\render_texture.h" />
     <ClInclude Include="src\shaderHandle.h" />
@@ -95,6 +99,10 @@
     <ClInclude Include="src\transform.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\resource\shaders\basiclight.frag" />
+    <None Include="..\resource\shaders\basiclight.vs" />
+    <None Include="..\resource\shaders\basiclighting.frag" />
+    <None Include="..\resource\shaders\basiclighting.vs" />
     <None Include="..\resource\shaders\camera.frag" />
     <None Include="..\resource\shaders\camera.vs" />
     <None Include="..\resource\shaders\colorstudy.frag" />
