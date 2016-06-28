@@ -145,10 +145,10 @@ void MaterialStudy::initVAO()
 //´ËrenderÎªäÖÈ¾devernay.free.fr
 void MaterialStudy::render()
 {
-	glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+	glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	double currentTime = glfwGetTime();
-	vec3 lightPos(1.8f * sin(currentTime), -1.0f, 1.8f * cos(currentTime));
+	vec3 lightPos(1.8f * sin(currentTime), -0.5f, 1.8f * cos(currentTime));
 	vec3 lightColor(1.0f, 1.0f, 1.0f);
 
 	mat4 model;
