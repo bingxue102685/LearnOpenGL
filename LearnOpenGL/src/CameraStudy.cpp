@@ -25,6 +25,7 @@ void CameraStudy::initStatues()
 	glfwSetCursorPosCallback(window, &Camera::mouse_callback);
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 	glfwSetScrollCallback(window, &Camera::scroll_callback);
+//	glfwSetMouseButtonCallback(window, &Camera::mouse_button_callback);
 }
 
 void CameraStudy::InitVAO()
