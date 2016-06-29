@@ -74,6 +74,7 @@
     <ClCompile Include="src\CameraStudy.cpp" />
     <ClCompile Include="src\ColorStudy.cpp" />
     <ClCompile Include="src\coordinateSys.cpp" />
+    <ClCompile Include="src\LightingMapStudy.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\MaterialStudy.cpp" />
     <ClCompile Include="src\renderDelegate.cpp" />
@@ -90,6 +91,7 @@
     <ClInclude Include="src\ColorStudy.h" />
     <ClInclude Include="src\coordinateSys.h" />
     <ClInclude Include="src\handle.h" />
+    <ClInclude Include="src\LightingMapStudy.h" />
     <ClInclude Include="src\MaterialStudy.h" />
     <ClInclude Include="src\renderDelegate.h" />
     <ClInclude Include="src\render_texture.h" />
@@ -111,6 +113,10 @@
     <None Include="..\resource\shaders\coordinate.vs" />
     <None Include="..\resource\shaders\light.frag" />
     <None Include="..\resource\shaders\light.vs" />
+    <None Include="..\resource\shaders\lightmapcube.frag" />
+    <None Include="..\resource\shaders\lightmapcube.vs" />
+    <None Include="..\resource\shaders\lightmaplight.frag" />
+    <None Include="..\resource\shaders\lightmaplight.vs" />
     <None Include="..\resource\shaders\materialcube.frag" />
     <None Include="..\resource\shaders\materialcube.vs" />
     <None Include="..\resource\shaders\materiallight.frag" />
@@ -125,9 +131,12 @@
   <ItemGroup>
     <Image Include="..\resource\bird.jpg" />
     <Image Include="..\resource\child.jpg" />
+    <Image Include="..\resource\container2.png" />
+    <Image Include="..\resource\container2_specular.png" />
     <Image Include="..\resource\crate.jpg" />
     <Image Include="..\resource\diban.jpg" />
     <Image Include="..\resource\erji.jpg" />
+    <Image Include="..\resource\matrix.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

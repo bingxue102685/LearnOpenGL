@@ -47,6 +47,9 @@
     <Filter Include="源文件\Lighting\materials">
       <UniqueIdentifier>{e1f74a8c-6df2-4941-b60c-6e8946ac30ae}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Lighting\lightingmap">
+      <UniqueIdentifier>{c4f811e3-dffd-4b40-8dd5-e0d20975bf87}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -88,6 +91,9 @@
     <ClCompile Include="src\MaterialStudy.cpp">
       <Filter>源文件\Lighting\materials</Filter>
     </ClCompile>
+    <ClCompile Include="src\LightingMapStudy.cpp">
+      <Filter>源文件\Lighting\lightingmap</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\simpleShader.h">
@@ -128,6 +134,9 @@
     </ClInclude>
     <ClInclude Include="src\MaterialStudy.h">
       <Filter>源文件\Lighting\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LightingMapStudy.h">
+      <Filter>源文件\Lighting\lightingmap</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -197,6 +206,18 @@
     <None Include="..\resource\shaders\materiallight.vs">
       <Filter>resource\shaders</Filter>
     </None>
+    <None Include="..\resource\shaders\lightmapcube.frag">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\lightmapcube.vs">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\lightmaplight.frag">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\lightmaplight.vs">
+      <Filter>resource\shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\resource\bird.jpg">
@@ -212,6 +233,15 @@
       <Filter>resource\pic</Filter>
     </Image>
     <Image Include="..\resource\erji.jpg">
+      <Filter>resource\pic</Filter>
+    </Image>
+    <Image Include="..\resource\container2.png">
+      <Filter>resource\pic</Filter>
+    </Image>
+    <Image Include="..\resource\container2_specular.png">
+      <Filter>resource\pic</Filter>
+    </Image>
+    <Image Include="..\resource\matrix.jpg">
       <Filter>resource\pic</Filter>
     </Image>
   </ItemGroup>

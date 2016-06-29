@@ -14,7 +14,7 @@ MaterialStudy::MaterialStudy()
 	glEnable(GL_DEPTH_TEST);
 	glEnable (GL_LINE_SMOOTH);
 	srand(time(0));
-	currentMatrialIndex = floor(rand() % 24);
+	currentMatrialIndex = floor(rand() % 24);                                                     
 }
 
 void MaterialStudy::initMaterialConfig()

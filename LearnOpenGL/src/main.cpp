@@ -15,11 +15,12 @@
 #include "ColorStudy.h"
 #include "BasicLighting.h"
 #include "MaterialStudy.h"
+#include "LightingMapStudy.h"
 int main() 
 {
 	RenderDelegate* renderDelegate = RenderDelegate::getInstance();
 
-	renderDelegate->setHandleDelegate(new MaterialStudy());
+	renderDelegate->setHandleDelegate(new LightingMapStudy());
 
 	renderDelegate->run();
 
