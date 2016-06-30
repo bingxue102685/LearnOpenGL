@@ -50,6 +50,9 @@
     <Filter Include="源文件\Lighting\lightingmap">
       <UniqueIdentifier>{c4f811e3-dffd-4b40-8dd5-e0d20975bf87}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\Lighting\lightcasters">
+      <UniqueIdentifier>{f431cb2c-11c4-48ba-b5ad-b6577fa7637c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -94,6 +97,9 @@
     <ClCompile Include="src\LightingMapStudy.cpp">
       <Filter>源文件\Lighting\lightingmap</Filter>
     </ClCompile>
+    <ClCompile Include="src\LightCasterStudy.cpp">
+      <Filter>源文件\Lighting\lightcasters</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\simpleShader.h">
@@ -137,6 +143,9 @@
     </ClInclude>
     <ClInclude Include="src\LightingMapStudy.h">
       <Filter>源文件\Lighting\lightingmap</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LightCasterStudy.h">
+      <Filter>源文件\Lighting\lightcasters</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -216,6 +225,18 @@
       <Filter>resource\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\lightmaplight.vs">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\lightcastercube.frag">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\lightcastercube.vs">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\lightcasterlight.frag">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\lightcasterlight.vs">
       <Filter>resource\shaders</Filter>
     </None>
   </ItemGroup>

@@ -74,6 +74,7 @@
     <ClCompile Include="src\CameraStudy.cpp" />
     <ClCompile Include="src\ColorStudy.cpp" />
     <ClCompile Include="src\coordinateSys.cpp" />
+    <ClCompile Include="src\LightCasterStudy.cpp" />
     <ClCompile Include="src\LightingMapStudy.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\MaterialStudy.cpp" />
@@ -91,6 +92,7 @@
     <ClInclude Include="src\ColorStudy.h" />
     <ClInclude Include="src\coordinateSys.h" />
     <ClInclude Include="src\handle.h" />
+    <ClInclude Include="src\LightCasterStudy.h" />
     <ClInclude Include="src\LightingMapStudy.h" />
     <ClInclude Include="src\MaterialStudy.h" />
     <ClInclude Include="src\renderDelegate.h" />
@@ -113,6 +115,10 @@
     <None Include="..\resource\shaders\coordinate.vs" />
     <None Include="..\resource\shaders\light.frag" />
     <None Include="..\resource\shaders\light.vs" />
+    <None Include="..\resource\shaders\lightcastercube.frag" />
+    <None Include="..\resource\shaders\lightcastercube.vs" />
+    <None Include="..\resource\shaders\lightcasterlight.frag" />
+    <None Include="..\resource\shaders\lightcasterlight.vs" />
     <None Include="..\resource\shaders\lightmapcube.frag" />
     <None Include="..\resource\shaders\lightmapcube.vs" />
     <None Include="..\resource\shaders\lightmaplight.frag" />

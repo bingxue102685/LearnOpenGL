@@ -21,6 +21,7 @@ private:
 	GLuint cubeEmissionTexture;
 	ShaderHandle* lightShader;
 	ShaderHandle* cubeShader;
+	vec3 cubePositions[10];
 	void initVAO();
 	void initTexture();
 

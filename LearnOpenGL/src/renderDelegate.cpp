@@ -15,6 +15,7 @@ RenderDelegate::RenderDelegate()
 void RenderDelegate::render()
 {
 	if (this->handleDelegate != nullptr) {
+		glEnable(GL_DEPTH_TEST);
 		this->handleDelegate->render();
 	} else {
 		cout << "Not initialize handleDelegate!" << endl;
