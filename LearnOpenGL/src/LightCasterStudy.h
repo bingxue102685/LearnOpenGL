@@ -14,6 +14,7 @@ class LightCasterStudy:public Handle
 public:
 	LightCasterStudy();
 	void render();
+	void render1();
 private:
 	GLuint cubeVAO;
 	GLuint lightVAO;
@@ -21,6 +22,7 @@ private:
 	GLuint cubeSpecularTexture;
 	ShaderHandle* cubeShader;
 	ShaderHandle* lightShader;
+	ShaderHandle* spotLightShader;
 	vec3 cubePositions[10];
 	void initVAO();
 	void initTexture();

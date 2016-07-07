@@ -239,6 +239,12 @@
     <None Include="..\resource\shaders\lightcasterlight.vs">
       <Filter>resource\shaders</Filter>
     </None>
+    <None Include="..\resource\shaders\spotlightcube.frag">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\spotlightcube.vs">
+      <Filter>resource\shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\resource\bird.jpg">

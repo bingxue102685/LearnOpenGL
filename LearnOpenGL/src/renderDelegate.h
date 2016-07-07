@@ -21,6 +21,7 @@ public:
 	void run();
 	void render();
 	GLFWwindow* getWindowHandle();
+	void printProgramInfoLog(GLuint obj);
 	void setHandleDelegate(Handle* handleDelegate);
 	static RenderDelegate* getInstance();
 private:

@@ -15,16 +15,28 @@ struct Light
 	//w为1，传入的是一个点，即定点光
 	//w为0，传入的是一个向量，即定向光
 	//此处不加以处理，若要处理if w==0 elseif w== 1即可
-	vec3 direction;  
+	vec3 position;
+	//vec3 direction;  
 	vec3 ambient;
 	vec3 specular;
 	vec3 diffuse;
+	/*衰减 
+	Fa = I / (Kc + Kl * d + Kq * d^2)
+
+	I:当前片段的光的亮度
+	d:代表片段到光源的距离
+	Kc:常数项
+	Kl:一次项
+	Kq:二次项
+	*/ 
+	float constant;  //常量（通常为1.0f）
+	float linear;    //一次项
+	float quadratic; //二次项
 };
 
 uniform Material material;
 uniform Light light;
 uniform vec3 lightcolor;
-uniform vec3 lightPos;
 uniform vec3 viewPos;
 
 in vec3 Normal;  //法线向量
@@ -42,24 +54,26 @@ void main()
 	//          3.镜面光，影响因子由反射光和视线（即摄像机到入射点的向量）的角度决定（点乘（cos（a））），角度越小，镜面光越大，
 	vec3 fragdiffuse = vec3(texture(material.diffuse, TexCoords));
 	vec3 fragspecular = vec3(texture(material.specular, TexCoords));
+	float distance = length(light.position - fragPos);
+	//衰减因子
+	float attenuation = 1.0f / (light.constant + light.linear * distance + light.quadratic * distance * distance);
 
-
-	//环境光(由于环境光太强，变小点)
-	vec3 ambient = lightcolor * fragdiffuse * light.ambient;
+	//环境光
+	vec3 ambient = lightcolor * fragdiffuse * light.ambient * attenuation;
 
 	//散射光
 	vec3 normal = normalize(Normal);
-	//vec3 lightDir = normalize(lightPos - fragPos);
-	vec3 lightDir = normalize(-light.direction);
+	vec3 lightDir = normalize(light.position - fragPos);
+	//vec3 lightDir = normalize(-light.direction);
 	float diff = max(dot(normal, lightDir), 0.0f);
-	vec3 diffuse = diff * lightcolor * fragdiffuse;
+	vec3 diffuse = diff * lightcolor * fragdiffuse * attenuation;
 
 	//镜面光
 	//material.shininess高光的发光值(Shininess)。一个物体的发光值越高，反射光的能力越强，散射得越少，高光点越小
 	vec3 viewDir = normalize(viewPos - fragPos);
 	vec3 reflecDir = reflect(-lightDir, normal);
 	float spec = pow(max(dot(viewDir, reflecDir),0.0f), material.shininess);
-	vec3 specular = spec * lightcolor * fragspecular;
+	vec3 specular = spec * lightcolor * fragspecular * attenuation;
 	//自发光
 	//vec3 emission = vec3(texture(material.emission, TexCoords));
 

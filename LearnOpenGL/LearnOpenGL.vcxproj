@@ -129,6 +129,8 @@
     <None Include="..\resource\shaders\materiallight.vs" />
     <None Include="..\resource\shaders\shaderstudy.frag" />
     <None Include="..\resource\shaders\shaderstudy.vs" />
+    <None Include="..\resource\shaders\spotlightcube.frag" />
+    <None Include="..\resource\shaders\spotlightcube.vs" />
     <None Include="..\resource\shaders\textures.frag" />
     <None Include="..\resource\shaders\textures.vs" />
     <None Include="..\resource\shaders\transform.frag" />
