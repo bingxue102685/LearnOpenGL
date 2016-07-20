@@ -53,6 +53,15 @@
     <Filter Include="源文件\Lighting\lightcasters">
       <UniqueIdentifier>{f431cb2c-11c4-48ba-b5ad-b6577fa7637c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\LoadModel">
+      <UniqueIdentifier>{51a89119-9128-41b0-a202-dc8c0d0a5d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\LoadModel\mesh">
+      <UniqueIdentifier>{2403ba19-32b8-4330-b62f-a5b3bee0eda9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\LoadModel\model">
+      <UniqueIdentifier>{12e82c89-442f-4534-b915-15a34f7a4763}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -100,6 +109,15 @@
     <ClCompile Include="src\LightCasterStudy.cpp">
       <Filter>源文件\Lighting\lightcasters</Filter>
     </ClCompile>
+    <ClCompile Include="src\Mesh.cpp">
+      <Filter>源文件\LoadModel\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model.cpp">
+      <Filter>源文件\LoadModel\model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\testModel.cpp">
+      <Filter>源文件\LoadModel</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\simpleShader.h">
@@ -146,6 +164,15 @@
     </ClInclude>
     <ClInclude Include="src\LightCasterStudy.h">
       <Filter>源文件\Lighting\lightcasters</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mesh.h">
+      <Filter>源文件\LoadModel\mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="src\model.h">
+      <Filter>源文件\LoadModel\model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\testModel.h">
+      <Filter>源文件\LoadModel</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -243,6 +270,12 @@
       <Filter>resource\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\spotlightcube.vs">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\modelstudy.frag">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\modelstudy.vs">
       <Filter>resource\shaders</Filter>
     </None>
   </ItemGroup>

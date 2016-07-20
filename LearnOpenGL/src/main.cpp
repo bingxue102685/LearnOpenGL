@@ -17,11 +17,12 @@
 #include "MaterialStudy.h"
 #include "LightingMapStudy.h"
 #include "LightCasterStudy.h"
+#include "testModel.h"
 int main() 
 {
 	RenderDelegate* renderDelegate = RenderDelegate::getInstance();
 
-	renderDelegate->setHandleDelegate(new LightCasterStudy());
+	renderDelegate->setHandleDelegate(new TestModel());
 
 	renderDelegate->run();
 

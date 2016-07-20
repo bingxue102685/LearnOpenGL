@@ -51,7 +51,7 @@
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(SolutionDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;SOIL.lib;assimpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/NODEFAULTLIB:"libcmt.lib" %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
@@ -78,6 +78,9 @@
     <ClCompile Include="src\LightingMapStudy.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\MaterialStudy.cpp" />
+    <ClCompile Include="src\Mesh.cpp" />
+    <ClCompile Include="src\model.cpp" />
+    <ClCompile Include="src\testModel.cpp" />
     <ClCompile Include="src\renderDelegate.cpp" />
     <ClCompile Include="src\render_texture.cpp" />
     <ClCompile Include="src\shaderHandle.cpp" />
@@ -95,11 +98,14 @@
     <ClInclude Include="src\LightCasterStudy.h" />
     <ClInclude Include="src\LightingMapStudy.h" />
     <ClInclude Include="src\MaterialStudy.h" />
+    <ClInclude Include="src\Mesh.h" />
+    <ClInclude Include="src\model.h" />
     <ClInclude Include="src\renderDelegate.h" />
     <ClInclude Include="src\render_texture.h" />
     <ClInclude Include="src\shaderHandle.h" />
     <ClInclude Include="src\shaderStudy.h" />
     <ClInclude Include="src\simpleShader.h" />
+    <ClInclude Include="src\testModel.h" />
     <ClInclude Include="src\transform.h" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +133,8 @@
     <None Include="..\resource\shaders\materialcube.vs" />
     <None Include="..\resource\shaders\materiallight.frag" />
     <None Include="..\resource\shaders\materiallight.vs" />
+    <None Include="..\resource\shaders\modelstudy.frag" />
+    <None Include="..\resource\shaders\modelstudy.vs" />
     <None Include="..\resource\shaders\shaderstudy.frag" />
     <None Include="..\resource\shaders\shaderstudy.vs" />
     <None Include="..\resource\shaders\spotlightcube.frag" />
