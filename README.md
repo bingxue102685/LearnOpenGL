@@ -1,6 +1,6 @@
 ## See it
 This repository just be used for learn opengl, reference course:
-###http://learnopengl-cn.readthedocs.io/zh/latest/
+###https://learnopengl-cn.github.io/
 ##Development Environment
 The development tool is Microsoft Visual Studio 2012, and the libraries needed for project is already added.You don't need to change anything, just open the solution and compile it.
 ##Run
