@@ -80,6 +80,7 @@
     <ClCompile Include="src\MaterialStudy.cpp" />
     <ClCompile Include="src\Mesh.cpp" />
     <ClCompile Include="src\model.cpp" />
+    <ClCompile Include="src\StencilTestStudy.cpp" />
     <ClCompile Include="src\testModel.cpp" />
     <ClCompile Include="src\renderDelegate.cpp" />
     <ClCompile Include="src\render_texture.cpp" />
@@ -105,6 +106,7 @@
     <ClInclude Include="src\shaderHandle.h" />
     <ClInclude Include="src\shaderStudy.h" />
     <ClInclude Include="src\simpleShader.h" />
+    <ClInclude Include="src\StencilTestStudy.h" />
     <ClInclude Include="src\testModel.h" />
     <ClInclude Include="src\transform.h" />
   </ItemGroup>

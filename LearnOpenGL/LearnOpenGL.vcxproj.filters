@@ -62,6 +62,15 @@
     <Filter Include="源文件\LoadModel\model">
       <UniqueIdentifier>{12e82c89-442f-4534-b915-15a34f7a4763}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\AdvancedOpenGL">
+      <UniqueIdentifier>{565171e9-8d59-4502-812f-31f374dc5673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\AdvancedOpenGL\DepthTesting">
+      <UniqueIdentifier>{5b356881-3cdb-46d9-b0ea-1acd0ee960e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\AdvancedOpenGL\StencilTesting">
+      <UniqueIdentifier>{7e2f1e3a-51ec-40ae-932b-e888dc59455e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -118,6 +127,9 @@
     <ClCompile Include="src\testModel.cpp">
       <Filter>源文件\LoadModel</Filter>
     </ClCompile>
+    <ClCompile Include="src\StencilTestStudy.cpp">
+      <Filter>源文件\AdvancedOpenGL\StencilTesting</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\simpleShader.h">
@@ -173,6 +185,9 @@
     </ClInclude>
     <ClInclude Include="src\testModel.h">
       <Filter>源文件\LoadModel</Filter>
+    </ClInclude>
+    <ClInclude Include="src\StencilTestStudy.h">
+      <Filter>源文件\AdvancedOpenGL\StencilTesting</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
