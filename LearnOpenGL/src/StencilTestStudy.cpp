@@ -151,7 +151,7 @@ void StencilTestStudy::render()
 	mat4 view(1.0f);
 	mat4 projection(1.0f);
 
-	view = lookAt(vec3(2.0f, 2.0f, 5.0f), vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 1.0f, 0.0f));
+	view = lookAt(vec3(0.0f, 2.0f, 5.0f), vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 1.0f, 0.0f));
 	projection = perspective(radians(45.0f), 800.0f / 600.0f, 0.1f, 1000.0f);
 
 	this->borderShader->UseProgram();

@@ -70,6 +70,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\BasicLighting.cpp" />
+    <ClCompile Include="src\BlendStudy.cpp" />
     <ClCompile Include="src\Camera.cpp" />
     <ClCompile Include="src\CameraStudy.cpp" />
     <ClCompile Include="src\ColorStudy.cpp" />
@@ -91,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\BasicLighting.h" />
+    <ClInclude Include="src\BlendStudy.h" />
     <ClInclude Include="src\Camera.h" />
     <ClInclude Include="src\CameraStudy.h" />
     <ClInclude Include="src\ColorStudy.h" />
@@ -115,6 +117,8 @@
     <None Include="..\resource\shaders\basiclight.vs" />
     <None Include="..\resource\shaders\basiclighting.frag" />
     <None Include="..\resource\shaders\basiclighting.vs" />
+    <None Include="..\resource\shaders\blendgrass.frag" />
+    <None Include="..\resource\shaders\blendgrass.vs" />
     <None Include="..\resource\shaders\camera.frag" />
     <None Include="..\resource\shaders\camera.vs" />
     <None Include="..\resource\shaders\colorstudy.frag" />
@@ -148,12 +152,14 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\resource\bird.jpg" />
+    <Image Include="..\resource\blending_transparent_window.png" />
     <Image Include="..\resource\child.jpg" />
     <Image Include="..\resource\container2.png" />
     <Image Include="..\resource\container2_specular.png" />
     <Image Include="..\resource\crate.jpg" />
     <Image Include="..\resource\diban.jpg" />
     <Image Include="..\resource\erji.jpg" />
+    <Image Include="..\resource\grass.png" />
     <Image Include="..\resource\matrix.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

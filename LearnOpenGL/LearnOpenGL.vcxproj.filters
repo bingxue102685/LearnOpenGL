@@ -71,6 +71,9 @@
     <Filter Include="源文件\AdvancedOpenGL\StencilTesting">
       <UniqueIdentifier>{7e2f1e3a-51ec-40ae-932b-e888dc59455e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\AdvancedOpenGL\Blending">
+      <UniqueIdentifier>{8059d578-f460-413a-9bad-f7fd470d7310}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -130,6 +133,9 @@
     <ClCompile Include="src\StencilTestStudy.cpp">
       <Filter>源文件\AdvancedOpenGL\StencilTesting</Filter>
     </ClCompile>
+    <ClCompile Include="src\BlendStudy.cpp">
+      <Filter>源文件\AdvancedOpenGL\Blending</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\simpleShader.h">
@@ -188,6 +194,9 @@
     </ClInclude>
     <ClInclude Include="src\StencilTestStudy.h">
       <Filter>源文件\AdvancedOpenGL\StencilTesting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BlendStudy.h">
+      <Filter>源文件\AdvancedOpenGL\Blending</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -293,6 +302,12 @@
     <None Include="..\resource\shaders\modelstudy.vs">
       <Filter>resource\shaders</Filter>
     </None>
+    <None Include="..\resource\shaders\blendgrass.frag">
+      <Filter>resource\shaders</Filter>
+    </None>
+    <None Include="..\resource\shaders\blendgrass.vs">
+      <Filter>resource\shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\resource\bird.jpg">
@@ -317,6 +332,12 @@
       <Filter>resource\pic</Filter>
     </Image>
     <Image Include="..\resource\matrix.jpg">
+      <Filter>resource\pic</Filter>
+    </Image>
+    <Image Include="..\resource\blending_transparent_window.png">
+      <Filter>resource\pic</Filter>
+    </Image>
+    <Image Include="..\resource\grass.png">
       <Filter>resource\pic</Filter>
     </Image>
   </ItemGroup>
