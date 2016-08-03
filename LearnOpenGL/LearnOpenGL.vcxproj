@@ -75,6 +75,8 @@
     <ClCompile Include="src\CameraStudy.cpp" />
     <ClCompile Include="src\ColorStudy.cpp" />
     <ClCompile Include="src\coordinateSys.cpp" />
+    <ClCompile Include="src\FaceCullingStudy.cpp" />
+    <ClCompile Include="src\FrameBufferStudy.cpp" />
     <ClCompile Include="src\LightCasterStudy.cpp" />
     <ClCompile Include="src\LightingMapStudy.cpp" />
     <ClCompile Include="src\main.cpp" />
@@ -97,6 +99,8 @@
     <ClInclude Include="src\CameraStudy.h" />
     <ClInclude Include="src\ColorStudy.h" />
     <ClInclude Include="src\coordinateSys.h" />
+    <ClInclude Include="src\FaceCullingStudy.h" />
+    <ClInclude Include="src\FrameBufferStudy.h" />
     <ClInclude Include="src\handle.h" />
     <ClInclude Include="src\LightCasterStudy.h" />
     <ClInclude Include="src\LightingMapStudy.h" />
@@ -154,6 +158,7 @@
     <Image Include="..\resource\bird.jpg" />
     <Image Include="..\resource\blending_transparent_window.png" />
     <Image Include="..\resource\child.jpg" />
+    <Image Include="..\resource\container.jpg" />
     <Image Include="..\resource\container2.png" />
     <Image Include="..\resource\container2_specular.png" />
     <Image Include="..\resource\crate.jpg" />

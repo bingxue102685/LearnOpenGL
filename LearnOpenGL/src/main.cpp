@@ -20,11 +20,16 @@
 #include "testModel.h"
 #include "StencilTestStudy.h"
 #include "BlendStudy.h"
+#include "FaceCullingStudy.h"
+#include "FrameBufferStudy.h"
+
+
+
 int main() 
 {
 	RenderDelegate* renderDelegate = RenderDelegate::getInstance();
 
-	renderDelegate->setHandleDelegate(new BlendStudy());
+	renderDelegate->setHandleDelegate(new FrameBufferStudy());
 
 	renderDelegate->run();
 

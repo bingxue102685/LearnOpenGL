@@ -74,6 +74,12 @@
     <Filter Include="源文件\AdvancedOpenGL\Blending">
       <UniqueIdentifier>{8059d578-f460-413a-9bad-f7fd470d7310}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\AdvancedOpenGL\FaceCulling">
+      <UniqueIdentifier>{1598d66f-e587-4525-a3bf-c948a4bbdf0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\AdvancedOpenGL\FrameBuffer">
+      <UniqueIdentifier>{a076aab1-ec64-484a-b987-ac7097ed8141}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -136,6 +142,12 @@
     <ClCompile Include="src\BlendStudy.cpp">
       <Filter>源文件\AdvancedOpenGL\Blending</Filter>
     </ClCompile>
+    <ClCompile Include="src\FaceCullingStudy.cpp">
+      <Filter>源文件\AdvancedOpenGL\FaceCulling</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameBufferStudy.cpp">
+      <Filter>源文件\AdvancedOpenGL\FrameBuffer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\simpleShader.h">
@@ -197,6 +209,12 @@
     </ClInclude>
     <ClInclude Include="src\BlendStudy.h">
       <Filter>源文件\AdvancedOpenGL\Blending</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FaceCullingStudy.h">
+      <Filter>源文件\AdvancedOpenGL\FaceCulling</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FrameBufferStudy.h">
+      <Filter>源文件\AdvancedOpenGL\FrameBuffer</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -338,6 +356,9 @@
       <Filter>resource\pic</Filter>
     </Image>
     <Image Include="..\resource\grass.png">
+      <Filter>resource\pic</Filter>
+    </Image>
+    <Image Include="..\resource\container.jpg">
       <Filter>resource\pic</Filter>
     </Image>
   </ItemGroup>
