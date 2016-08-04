@@ -22,14 +22,16 @@
 #include "BlendStudy.h"
 #include "FaceCullingStudy.h"
 #include "FrameBufferStudy.h"
+#include "CubmapStudy.h"
 
 
 
 int main() 
 {
+
 	RenderDelegate* renderDelegate = RenderDelegate::getInstance();
 
-	renderDelegate->setHandleDelegate(new FrameBufferStudy());
+	renderDelegate->setHandleDelegate(new CubmapStudy());
 
 	renderDelegate->run();
 

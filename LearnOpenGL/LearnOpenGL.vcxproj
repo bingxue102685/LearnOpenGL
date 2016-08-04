@@ -71,10 +71,12 @@
   <ItemGroup>
     <ClCompile Include="src\BasicLighting.cpp" />
     <ClCompile Include="src\BlendStudy.cpp" />
+    <ClCompile Include="src\BrowseDir.cpp" />
     <ClCompile Include="src\Camera.cpp" />
     <ClCompile Include="src\CameraStudy.cpp" />
     <ClCompile Include="src\ColorStudy.cpp" />
     <ClCompile Include="src\coordinateSys.cpp" />
+    <ClCompile Include="src\CubmapStudy.cpp" />
     <ClCompile Include="src\FaceCullingStudy.cpp" />
     <ClCompile Include="src\FrameBufferStudy.cpp" />
     <ClCompile Include="src\LightCasterStudy.cpp" />
@@ -95,10 +97,12 @@
   <ItemGroup>
     <ClInclude Include="src\BasicLighting.h" />
     <ClInclude Include="src\BlendStudy.h" />
+    <ClInclude Include="src\BrowseDir.h" />
     <ClInclude Include="src\Camera.h" />
     <ClInclude Include="src\CameraStudy.h" />
     <ClInclude Include="src\ColorStudy.h" />
     <ClInclude Include="src\coordinateSys.h" />
+    <ClInclude Include="src\CubmapStudy.h" />
     <ClInclude Include="src\FaceCullingStudy.h" />
     <ClInclude Include="src\FrameBufferStudy.h" />
     <ClInclude Include="src\handle.h" />

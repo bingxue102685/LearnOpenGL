@@ -8,9 +8,6 @@
     <Filter Include="resource">
       <UniqueIdentifier>{fbf74e69-d680-40f3-925b-fc77dc2d1403}</UniqueIdentifier>
     </Filter>
-    <Filter Include="resource\shaders">
-      <UniqueIdentifier>{61387131-e85c-4a58-9f79-4ed008af5102}</UniqueIdentifier>
-    </Filter>
     <Filter Include="resource\pic">
       <UniqueIdentifier>{f74fc3cd-8d95-47d5-9da0-70071d15a8c0}</UniqueIdentifier>
     </Filter>
@@ -80,6 +77,12 @@
     <Filter Include="源文件\AdvancedOpenGL\FrameBuffer">
       <UniqueIdentifier>{a076aab1-ec64-484a-b987-ac7097ed8141}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\AdvancedOpenGL\CubMaps">
+      <UniqueIdentifier>{bf0edabe-1fff-4ce9-9c4e-53411ab01a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\AdvancedOpenGL\Blending\shaders">
+      <UniqueIdentifier>{61387131-e85c-4a58-9f79-4ed008af5102}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
@@ -147,6 +150,12 @@
     </ClCompile>
     <ClCompile Include="src\FrameBufferStudy.cpp">
       <Filter>源文件\AdvancedOpenGL\FrameBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CubmapStudy.cpp">
+      <Filter>源文件\AdvancedOpenGL\CubMaps</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BrowseDir.cpp">
+      <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -216,115 +225,121 @@
     <ClInclude Include="src\FrameBufferStudy.h">
       <Filter>源文件\AdvancedOpenGL\FrameBuffer</Filter>
     </ClInclude>
+    <ClInclude Include="src\CubmapStudy.h">
+      <Filter>源文件\AdvancedOpenGL\CubMaps</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BrowseDir.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\resource\shaders\camera.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\camera.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\coordinate.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\coordinate.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\shaderstudy.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\shaderstudy.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\textures.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\textures.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\transform.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\transform.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\colorstudy.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\colorstudy.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\light.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\light.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\basiclight.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\basiclight.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\basiclighting.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\basiclighting.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\materialcube.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\materialcube.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\materiallight.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\materiallight.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\lightmapcube.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\lightmapcube.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\lightmaplight.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\lightmaplight.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\lightcastercube.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\lightcastercube.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\lightcasterlight.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\lightcasterlight.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\spotlightcube.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\spotlightcube.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\modelstudy.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\modelstudy.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\blendgrass.frag">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
     <None Include="..\resource\shaders\blendgrass.vs">
-      <Filter>resource\shaders</Filter>
+      <Filter>源文件\AdvancedOpenGL\Blending\shaders</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
