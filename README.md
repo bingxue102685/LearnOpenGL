@@ -1,15 +1,17 @@
 ## See it
 This repository just be used for learn opengl, reference course:
-###https://learnopengl-cn.github.io/
-##Development Environment
+[https://learnopengl-cn.github.io/](https://learnopengl-cn.github.io/)
+## Development Environment
 The development tool is Microsoft Visual Studio 2012, and the libraries needed for project is already added.You don't need to change anything, just open the solution and compile it.
-##Run
+## Run
 These iamges is the sceenshoot when I study material.
 
 ![](https://github.com/bingxue102685/LearnOpenGL/tree/master/resource/showImage/show1.png)
 ![](https://github.com/bingxue102685/LearnOpenGL/tree/master/resource/showImage/show2.png)
 ![](https://github.com/bingxue102685/LearnOpenGL/tree/master/resource/showImage/show3.gif)
-##Who Am I?
+## Who Am I?
 I'm a beginner. It's a little difficult for me, but I love it! In this project, I used simple proxy pattern, if you have some good idea, tell me. My email address is gamerzhj@163.com
-##The End
+## The End
 I hope someone who love opengl make friends with me.
+
+Here is my E-mail address:__gamerzhj@163.com__
