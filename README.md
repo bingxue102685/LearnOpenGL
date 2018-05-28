@@ -10,8 +10,6 @@ These iamges is the sceenshoot when I study material.
 ![](https://github.com/bingxue102685/LearnOpenGL/tree/master/resource/showImage/show2.png)
 ![](https://github.com/bingxue102685/LearnOpenGL/tree/master/resource/showImage/show3.gif)
 ## Who Am I?
-I'm a beginner. It's a little difficult for me, but I love it! In this project, I used simple proxy pattern, if you have some good idea, tell me. My email address is gamerzhj@163.com
+I'm a beginner. It's a little difficult for me, but I love it! In this project, I used simple proxy pattern, if you have some good idea, tell me. My email address is __gamerzhj@163.com__
 ## The End
 I hope someone who love opengl make friends with me.
-
-Here is my E-mail address:__gamerzhj@163.com__
